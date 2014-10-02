@@ -1,0 +1,25 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BIrdsApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="using:BIrdsApp.viewmodel"
+    x:Class="BIrdsApp.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
+            <viewmodel:MainViewModel/>
+        </Grid.DataContext>
+        <TextBlock HorizontalAlignment="Left" Margin="281,172,0,0" TextWrapping="Wrap" Text="{Binding BirdOne.Species}" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="751,172,0,0" TextWrapping="Wrap" Text="{Binding BirdTwo.Species}" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="281,239,0,0" TextWrapping="Wrap" Text="{Binding BirdOne.Color}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="281,339,0,0" TextWrapping="Wrap" Text="{Binding BirdOne.Size}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="281,288,0,0" TextWrapping="Wrap" Text="{Binding BirdOne.Origin}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="751,239,0,0" TextWrapping="Wrap" Text="{Binding BirdTwo.Color}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="751,288,0,0" TextWrapping="Wrap" Text="{Binding BirdTwo.Origin}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="751,339,0,0" TextWrapping="Wrap" Text="{Binding BirdTwo.Size}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+
+    </Grid>
+</Page>
